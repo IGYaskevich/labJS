@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { pokemonAPI } from "../api/config";
+import {useEffect, useState} from "react";
+import {pokemonAPI} from "../api/config";
 
 export const PokemonPageContainer = () => {
-  const [pokemons, setPokemons] = useState<Array<any>>([]);
+  const [pokemons, setPokemons] = useState([]);
 
   useEffect(() => {
     pokemonAPI

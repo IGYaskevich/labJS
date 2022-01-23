@@ -1,34 +1,21 @@
-import {
-  ChangeEvent,
-  FC,
-  memo,
-  MouseEvent,
-  useCallback,
-  useState,
-} from "react";
+import {memo, useCallback, useState,} from "react";
 
-import { icons } from "../../../../static/iconsForTodo/icons";
-import { TextField, Paper } from "@mui/material";
+import {icons} from "../../../../static/iconsForTodo/icons";
+import {Paper, TextField} from "@mui/material";
 import style from "./styles.module.scss";
 
-type TaskType = {
-  title: string;
-  id: string;
-  handleCancelChanges: (currentID: string) => void;
-  handleChangeTask: (currentID: string, title: string) => void;
-};
-export const TaskEditMode: FC<TaskType> = memo(
+export const TaskEditMode= memo(
   ({ title, id, handleCancelChanges, handleChangeTask }) => {
     const [taskName, setTaskName] = useState(title);
 
     const onChangeTitle = useCallback(
-      (event: ChangeEvent<HTMLInputElement>) => {
+      (event) => {
         setTaskName(event.target.value);
       },
       [setTaskName]
     );
     const handleSaveChanges = useCallback(
-      (event: MouseEvent) => {
+      (event) => {
         event.preventDefault();
         handleChangeTask(id, taskName);
         setTaskName("");

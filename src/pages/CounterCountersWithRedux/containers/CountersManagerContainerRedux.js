@@ -1,48 +1,46 @@
-import { FC, useCallback } from "react";
-import { NavBar } from "../components/NavBar";
+import {useCallback} from "react";
+import {NavBar} from "../components/NavBar";
 
-import style from "./index.module.css";
-import { useDispatch, useSelector } from "react-redux";
-import { AppStateType } from "../../../store/rootReducer";
-import { InitialStateType } from "../reducers/reducers";
+import {useDispatch, useSelector} from "react-redux";
 import * as actions from "../actions/actions";
-import { CounterView } from "../../Counter/CounterLayout/CounterView";
-import { totalCountersCount } from "../selectors";
+import {totalCountersCount} from "../selectors";
+import {CounterView} from "../../Counter/CounterLayout/CounterCiew";
+import style from "./index.module.css";
 
-export const CountersManagerContainerRedux: FC = () => {
+export const CountersManagerContainerRedux= () => {
   const dispatch = useDispatch();
 
   const totalValue = useSelector(totalCountersCount);
-  const { counters } = useSelector<AppStateType, InitialStateType>(
+  const { counters } = useSelector(
     (state) => state.countersManagerPage
   );
 
   const handleCreateNewCounter = useCallback(() => {
     dispatch(actions.CREATE_COUNTER());
-  }, []);
+  }, [dispatch]);
 
   const handleRemoveLastCounter = useCallback(() => {
     dispatch(actions.REMOVE_LAST_COUNTER());
-  }, []);
+  }, [dispatch]);
 
   const handleResetAllCounters = useCallback(() => {
     dispatch(actions.RESET_ALL_COUNTERS());
-  }, []);
+  }, [dispatch]);
 
-  const handleIncrementCounter = useCallback((currentID: string) => {
+  const handleIncrementCounter = useCallback((currentID) => {
     dispatch(actions.INCREMENT_COUNTER(currentID));
-  }, []);
+  }, [dispatch]);
 
-  const handleDecrementCounter = useCallback((currentID: string) => {
+  const handleDecrementCounter = useCallback((currentID) => {
     dispatch(actions.DECREMENT_COUNTER(currentID));
-  }, []);
+  }, [dispatch]);
 
-  const handleResetCounter = useCallback((currentID: string) => {
+  const handleResetCounter = useCallback((currentID) => {
     dispatch(actions.RESET_CURRENT_COUNTER(currentID));
   }, []);
 
-  const handleRemoveCounter = useCallback((id: string) => {
-    dispatch(actions.REMOVE_CURRENT_COUNTER(id));
+  const handleRemoveCounter = useCallback((currentID) => {
+    dispatch(actions.REMOVE_CURRENT_COUNTER(currentID));
   }, []);
 
   const totalCounters = counters.length;

@@ -1,9 +1,9 @@
-import { NavBar } from "./NavBar/NavBar";
+import {NavBar} from "./NavBar/NavBar";
 
 import style from "./index.module.css";
 
 import logo from "../../../../../static/images/logo.png";
-import { Button } from "../../../../../components/ButtonForLayout";
+import {Button} from "../../../../../components/ButtonForLayout/Button";
 
 export const Header = () => {
   const navLinkList = [

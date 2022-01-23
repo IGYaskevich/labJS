@@ -2,19 +2,13 @@ import { handleActions } from "redux-actions";
 import * as actions from "../actions/actions";
 import { v1 as uuid } from "uuid";
 
-export type CountersType = {
-  value: number;
-  id: string;
-};
-export type InitialStateType = {
-  counters: Array<CountersType>;
-};
 
-const initialState: InitialStateType = {
+
+const initialState = {
   counters: [],
 };
 
-export const countersManagerReducer = handleActions<any>(
+export const countersManagerReducer = handleActions(
   {
     [actions.CREATE_COUNTER]: (state) => {
       const newCounter = { value: 0, id: uuid() };
@@ -31,6 +25,7 @@ export const countersManagerReducer = handleActions<any>(
     },
     [actions.REMOVE_CURRENT_COUNTER]: (state, { payload }) => {
       const countersCopy = [...state.counters];
+        console.log(payload)
       const counterIndex = countersCopy.findIndex(
         (counter) => counter.id === payload
       );

@@ -1,18 +1,14 @@
-import { FC, useCallback, useState } from "react";
-import { NavBar } from "../components/NavBar";
+import {useCallback, useState} from "react";
+import {NavBar} from "../components/NavBar";
 
-import { CounterView } from "../../Counter/CounterLayout/CounterView";
-import { v1 as uuidV1 } from "uuid";
+import {v1 as uuidV1} from "uuid";
 
 import style from "./style.module.css";
+import {CounterView} from "../../Counter/CounterLayout/CounterCiew";
 
-type CountersType = {
-  value: number;
-  id: string;
-};
 
-export const CountersManagerContainer: FC = () => {
-  const [counters, setCounters] = useState<Array<CountersType>>([]);
+export const CountersManagerContainer = () => {
+  const [counters, setCounters] = useState ([]);
 
   const handleCreateNewCounter = useCallback(() => {
     const newCounter = { value: 0, id: uuidV1() };
@@ -45,7 +41,7 @@ export const CountersManagerContainer: FC = () => {
     setCounters([]);
   }, []);
 
-  const handleIncrementCounter = useCallback((currentID: string) => {
+  const handleIncrementCounter = useCallback((currentID) => {
     setCounters((state) =>
       state.map((counter) =>
         counter.id === currentID
@@ -55,7 +51,7 @@ export const CountersManagerContainer: FC = () => {
     );
   }, []);
 
-  const handleDecrementCounter = useCallback((currentID: string) => {
+  const handleDecrementCounter = useCallback((currentID) => {
     setCounters((state) =>
       state.map((counter) =>
         counter.id === currentID && counter.value > 0
@@ -65,7 +61,7 @@ export const CountersManagerContainer: FC = () => {
     );
   }, []);
 
-  const handleResetCounter = useCallback((currentID: string) => {
+  const handleResetCounter = useCallback((currentID) => {
     setCounters((state) =>
       state.map((counter) =>
         counter.id === currentID
@@ -81,7 +77,7 @@ export const CountersManagerContainer: FC = () => {
     }, 0);
   }, [counters]);
 
-  const handleRemoveCounter = useCallback((id: string) => {
+  const handleRemoveCounter = useCallback((id) => {
     setCounters((state) => state.filter((item) => item.id !== id));
   }, []);
 

@@ -1,18 +1,14 @@
 import * as actions from "../actions/actions";
 import { handleActions } from "redux-actions";
 
-type InitialStateType = {
-  pokemonList: Array<any>;
-  isLoading: boolean;
-  errors: null | string;
-};
+
 const initialState = {
   pokemonList: [],
   isLoading: false,
   errors: null,
 };
 
-export const pokemonPageReducer = handleActions<InitialStateType, any>(
+export const pokemonPageReducer = handleActions(
   {
     [actions.GET_POKEMON_REQUEST]: (state) => {
       return { ...state, isLoading: true };

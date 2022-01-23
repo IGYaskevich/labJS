@@ -1,12 +1,7 @@
-import { FC } from "react";
 import style from "./explanation.module.css";
 
-type ExplanationType = {
-  title: string;
-  description: string;
-  image: string;
-};
-export const Explanation: FC<ExplanationType> = ({
+
+export const Explanation= ({
   image,
   title,
   description,

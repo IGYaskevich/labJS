@@ -1,13 +1,7 @@
-import { FC } from "react";
 import style from "./information.module.css";
 
-type InformationType = {
-  smallImage: string;
-  avatar: string;
-  text?: string;
-  name: string;
-};
-export const Information: FC<InformationType> = ({
+
+export const Information = ({
   smallImage,
   avatar,
   name,

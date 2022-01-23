@@ -1,20 +1,13 @@
-import { FC, memo } from "react";
+import {memo} from "react";
 
 import Checkbox from "@mui/material/Checkbox";
-import { Paper } from "@mui/material";
-import { icons } from "../../../../static/iconsForTodo/icons";
+import {Paper} from "@mui/material";
+import {icons} from "../../../../static/iconsForTodo/icons";
 
 import style from "./styles.module.scss";
 
-type TaskType = {
-  title: string;
-  id: string;
-  isDone: boolean;
-  handleRemoveTask: (currentID: string) => void;
-  handleIsDone: (currentID: string) => void;
-  handleEditMode: (currentID: string) => void;
-};
-export const Task: FC<TaskType> = memo(
+
+export const Task = memo(
   ({ title, id, isDone, handleRemoveTask, handleIsDone, handleEditMode }) => {
     return (
       <div className={style.container}>

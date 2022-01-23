@@ -1,13 +1,13 @@
-import { Information } from "./Information/Information";
+import {Information} from "./Information/Information";
 
 import smallImg from "../../../../static/images/social/instagram.svg";
 import avatar from "../../../../static/images/avatar.svg";
 
 import style from "./blog.module.css";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 
-import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
+import {A11y, Navigation, Pagination, Scrollbar} from "swiper";
 import "swiper/css";
 
 export const Blog = () => {

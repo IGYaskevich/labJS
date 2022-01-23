@@ -1,24 +1,13 @@
-import { handleActions } from "redux-actions";
+import {handleActions} from "redux-actions";
 import * as actions from "../actions/actions";
-import { v1 as uuid } from "uuid";
+import {v1 as uuid} from "uuid";
 
-export type TaskType = {
-  title: string;
-  id: string;
-  isDone: boolean;
-  editMode: boolean;
-};
-export type InitialStateTaskManagerType = {
-  tasksList: Array<TaskType>;
-};
-const initialState: InitialStateTaskManagerType = {
+
+const initialState = {
   tasksList: [],
 };
 
-export const taskManagerReducer = handleActions<
-  InitialStateTaskManagerType,
-  any
->(
+export const taskManagerReducer = handleActions(
   {
     [actions.CREATE_TASK]: (state, { payload: title }) => {
       const createdNewTask = {

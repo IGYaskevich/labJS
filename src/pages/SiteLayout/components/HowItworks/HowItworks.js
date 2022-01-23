@@ -1,11 +1,11 @@
-import { Explanation } from "./Explanation/Explanation";
+import {Button} from "../../../../components/ButtonForLayout/Button";
+import {Explanation} from "./Explanation/Explanation";
 
 import parrot from "../../../../static/images/litleParrot.svg";
 import dog from "../../../../static/images/littleDog.svg";
 import hare from "../../../../static/images/litleHare.svg";
 
 import style from "./howItworks.module.css";
-import { Button } from "../../../../components/ButtonForLayout";
 
 export const HowItWorks = () => {
   return (

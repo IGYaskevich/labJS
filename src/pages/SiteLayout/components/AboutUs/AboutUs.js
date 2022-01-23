@@ -1,5 +1,5 @@
 import coverImage from "../../../../static/images/aboutUs.png";
-import { Button } from "../../../../components/ButtonForLayout";
+import {Button} from "../../../../components/ButtonForLayout/Button";
 
 import style from "./aboutUs.module.css";
 

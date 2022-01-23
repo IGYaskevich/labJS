@@ -1,9 +1,10 @@
-import style from "./footer.module.css";
-
 import google from "../../../../static/images/social/google.svg";
+
 import fes from "../../../../static/images/social/fecebook.svg";
 import inst from "../../../../static/images/social/inst.svg";
 import twiter from "../../../../static/images/social/twiter.svg";
+
+import style from "./footer.module.css";
 
 export const Footer = () => {
   return (

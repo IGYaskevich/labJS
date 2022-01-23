@@ -1,13 +1,7 @@
-import { FC } from "react";
 import style from "./itemsDescription.module.css";
 
-type DescriptionType = {
-  title: string;
-  description: string;
-  isLine: boolean;
-  descriptionSignature?: string;
-};
-export const ItemsDescription: FC<DescriptionType> = ({
+
+export const ItemsDescription = ({
   title,
   description,
   isLine,

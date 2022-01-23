@@ -1,16 +1,11 @@
-import { FC, memo } from "react";
+import {memo} from "react";
 
-import { Button } from "../../../../components/ButtonForCounter";
+import {Button} from "../../../../components/ButtonForCounter";
 
 import style from "./index.module.css";
 
-type NavBarType = {
-  handleCreateNewCounter: () => void;
-  handleRemoveLastCounter: () => void;
-  handleResetAllCounters: () => void;
-};
 
-export const NavBar: FC<NavBarType> = memo(
+export const NavBar = memo(
   ({
     handleCreateNewCounter,
     handleRemoveLastCounter,

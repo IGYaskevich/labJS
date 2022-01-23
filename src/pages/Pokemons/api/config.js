@@ -5,8 +5,8 @@ const instance = axios.create({
 });
 
 export const pokemonAPI = {
-  getPokemons(pokemon: "pokemon") {
-    return instance.get<any>(`/${pokemon}`);
+  getPokemons(pokemon) {
+    return instance.get(`/${pokemon}`);
   },
 };
 

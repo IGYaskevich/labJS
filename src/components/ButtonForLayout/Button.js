@@ -1,15 +1,8 @@
-import style from "./button.module.css";
-import {memo} from "react";
+import style from './index.module.css'
 
+export const Button = ({title}) => {
+    return <button className={style.button}>
+        {title}
+    </button>
+};
 
-export const Button = memo(({ title, method, disabled }) => {
-    return (
-        <button
-            className={style.buttonElement}
-            onClick={method}
-            disabled={disabled}
-        >
-            {title}
-        </button>
-    );
-});
