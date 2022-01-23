@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/labJS/static/css/main.252c8077.css",
+    "main.js": "/labJS/static/js/main.70d03168.js",
+    "static/media/aboutUs.png": "/labJS/static/media/aboutUs.297d96662ebf3a41596a.png",
+    "static/media/littleDog.svg": "/labJS/static/media/littleDog.aa234d2df71adee548cbe36f84321cd7.svg",
+    "static/media/avatar.svg": "/labJS/static/media/avatar.97fec8105f2770645ac82606211c2f1b.svg",
+    "static/media/litleHare.svg": "/labJS/static/media/litleHare.253e84f3b9cc71e7c086d3282a315232.svg",
+    "static/media/litleParrot.svg": "/labJS/static/media/litleParrot.a221c3ecd3a1f7800184f837e0c93b21.svg",
+    "static/media/centeImg.png": "/labJS/static/media/centeImg.e1523ae6f0f8aca87f7d.png",
+    "static/media/instagram.svg": "/labJS/static/media/instagram.22d0af20d15e496a06ca6f0463cec164.svg",
+    "static/media/dog.png": "/labJS/static/media/dog.e2736581d20bb41b09d7.png",
+    "static/media/corporateMember.svg": "/labJS/static/media/corporateMember.a1478a54b9f2289707cc7f9ce972c157.svg",
+    "static/media/rightImg.png": "/labJS/static/media/rightImg.6231aef58af290e8fcf5.png",
+    "static/media/leftImg.png": "/labJS/static/media/leftImg.9c1a13b6d46e97018a3f.png",
+    "static/media/amerCollegeOfApothecaries.svg": "/labJS/static/media/amerCollegeOfApothecaries.1c1358504d457947cb3f89a4a646e0e0.svg",
+    "static/media/mixlabrxCom.svg": "/labJS/static/media/mixlabrxCom.14d7779119e9ee7efe0abb3327c1be09.svg",
+    "static/media/PCCA.svg": "/labJS/static/media/PCCA.8fbe2e71db9056c4cac8781efd68ae01.svg",
+    "static/media/AFPC.svg": "/labJS/static/media/AFPC.d87e94f74d0e5d0381ae8402d587f555.svg",
+    "static/media/inst.svg": "/labJS/static/media/inst.7175d6f6d9935eb41dd154e3a6c0949e.svg",
+    "static/media/google.svg": "/labJS/static/media/google.88026485b1054c811674dc2c3fefabfa.svg",
+    "static/media/twiter.svg": "/labJS/static/media/twiter.08ba5eb96be806d34810259ba8e7a5b1.svg",
+    "index.html": "/labJS/index.html",
+    "static/media/fecebook.svg": "/labJS/static/media/fecebook.ded254a3f7284cce421a98dd1752ec40.svg",
+    "main.252c8077.css.map": "/labJS/static/css/main.252c8077.css.map",
+    "main.70d03168.js.map": "/labJS/static/js/main.70d03168.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.252c8077.css",
+    "static/js/main.70d03168.js"
+  ]
+}
