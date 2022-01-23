@@ -1,0 +1,29 @@
+.containerDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    max-width: 480px;
+    margin-bottom: 70px;
+}
+
+.title {
+    color: #6F1EAA;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 22px;
+    position: relative;
+}
+
+.hr {
+    width: 100%;
+    margin-top: 25px;
+    background-color: black;
+    border: 1px solid;
+    color: #F7A500;
+}

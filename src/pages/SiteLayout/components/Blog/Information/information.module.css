@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 800px;
+    min-height: 300px;
+    background-color: #DFF5F6;
+}
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 10px;
+}
+.avatar{
+    width: 150px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+    padding: 10px
+}
+
+.authorBlock {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+
+.smallImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+.nameAuthor{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+
+@media screen and (max-width: 1515px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+        background-color: #DFF5F6;
+    }
+}

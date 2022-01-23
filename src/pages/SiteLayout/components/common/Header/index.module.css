@@ -1,0 +1,32 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1180px;
+}
+
+.authorizationBlock {
+    display: flex;
+    align-items: center;
+}
+
+.authorizationLink {
+margin-right: 30px;
+font-size: 14px;
+font-weight: 400;
+color: #6F1EAA;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+}

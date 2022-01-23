@@ -1,0 +1,26 @@
+.counterCounters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.ButtonTitle {
+    color: black;
+    font-size: 22px;
+    margin: 5px
+}
+
+.counters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}

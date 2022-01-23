@@ -1,0 +1,36 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #48156D;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap:wrap ;
+    width: 100%;
+    padding-top: 20px;
+}
+.containerInformation {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    color: #C282F0;
+    padding: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 150px;
+}

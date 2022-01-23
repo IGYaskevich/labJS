@@ -1,0 +1,11 @@
+.href {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.href:last-child {
+    margin-right: 0;
+}
